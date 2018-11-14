@@ -151,11 +151,7 @@ oExcel.activeSheet.printPreview
 oExcel.activeSheet.printOut
 
 ' 20) 工作表保存
-if not oExcel.activeWorkBook.saved then
-oExcel.activeWorkBook.save
-msgbox oexcel.activeworkbook.saved
-end if
-
+oExcel.activeWorkBook.saveAs "d:\te.xls", 56
 
 ' 21) 关闭退出
 ' 关闭工作薄
